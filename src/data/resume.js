@@ -13,8 +13,8 @@ const resumeData = {
     },
     {
       title: "Website",
-      handle:"https://sukhdeepdeveloper.netlify.app",
-      link: "https://sukhdeepdeveloper.netlify.app",
+      handle:"https://sukhdeepdeveloper.vercel.app",
+      link: "https://sukhdeepdeveloper.vercel.app",
       icon: GlobeIcon,
     },
     {

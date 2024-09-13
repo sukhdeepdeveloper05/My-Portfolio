@@ -5,7 +5,7 @@ import HamburgerBtn from "./HamburgerBtn";
 
 export default function Header() {
   return (
-    <header className="flex md:hidden items-center justify-between px-6 py-4">
+    <header className="bg-[#131415] flex md:hidden items-center justify-between px-6 py-4">
       <Link href="/" className="flex items-center justify-start gap-4">
         <figure>
           <Image src={profileImage} width={40} height={40} alt="Profile image" />

@@ -3,7 +3,10 @@ import Image from "next/image";
 export default function Project({
   project: { title, link, image, year, platformIcon },
 }) {
-  const formattedLink = link.replaceAll("https://", "").replaceAll("/", "");
+  const formattedLink = link
+    .replaceAll("https://", "")
+    .replaceAll("/", "")
+    .replaceAll("-sukhdeep", "");
 
   return (
     <a
@@ -12,12 +15,12 @@ export default function Project({
       className="group flex flex-col p-2 rounded-lg border border-[#2f3037] hover:border-[#3f3f44] shadow-[#13141566_0px_2px_40px_10px] hover:shadow-[#42454866_0px_2px_40px_10px] transition-all"
     >
       <div className="grid grid-cols-[1fr,auto,1fr] items-center justify-between mb-2">
-        <div className="flex items-center gap-[2px]">
-          <span className="w-2 h-2 bg-red-700 opacity-85 group-hover:opacity-100 rounded-full transition-all" />
-          <span className="w-2 h-2 bg-yellow-600 opacity-85 group-hover:opacity-100 rounded-full transition-all" />
-          <span className="w-2 h-2 bg-green-700 opacity-85 group-hover:opacity-100 rounded-full transition-all" />
+        <div className="flex items-center gap-[4px]">
+          <span className="w-2 md:w-[10px] h-2 md:h-[10px] bg-zinc-500 group-hover:bg-red-700 opacity-60 group-hover:opacity-100 rounded-full transition-all" />
+          <span className="w-2 md:w-[10px] h-2 md:h-[10px] bg-zinc-500 group-hover:bg-yellow-600 opacity-60 group-hover:opacity-100 rounded-full transition-all" />
+          <span className="w-2 md:w-[10px] h-2 md:h-[10px] bg-zinc-500 group-hover:bg-green-700 opacity-60 group-hover:opacity-100 rounded-full transition-all" />
         </div>
-        <span className="bg-[#545556a8] px-4 py-px rounded text-[8px] xl:text-xs text-gray-200 group-hover:text-white transition-all">
+        <span className="bg-[#545556a8] min-w-44 text-center px-4 py-px rounded text-[8px] md:text-xs text-gray-200 group-hover:text-white transition-all">
           {formattedLink}
         </span>
         <span className="flex justify-end">{platformIcon()}</span>

@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("../assets/background/blob-haikei.svg") center center/cover
+  background: #131415 url("../assets/background/blob-haikei.svg") center center/cover
     no-repeat;
   color: #fff;
   min-height: 100vh;
